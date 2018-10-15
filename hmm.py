@@ -30,7 +30,7 @@ class HMM:
     def _backward(self,obs_seq):
         N = self.A.shape[0]
         T = len(obs_seq)
-
+        # 此行为学习github而写的
         X = zeros((N,T))
         # 表示X矩阵的最后一列
         X[:,-1:] =1
